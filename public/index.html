@@ -1,7 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  </head>
+    <!-- facebook Open Graph meta tags -->
+    <meta property="og:title" content="Patias workshop | Front page" />
+    <meta property="og:url" content="patiaworkshop.com/Front page" />
+    <meta property="og:image" content="assets/img/decoration/PatiaLogo_Basic.png" />
+    <!-- <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Hello hello and welcome traveller. Thank you for checking out my little workshop" />
+    <meta property="og:locale" content="en" />
+    <!-- facebook Open Graph meta tags ends here -->
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/img/decoration/icons/Icons_Bolt2.png">
+    <title>Patias workshop | Front page</title>
+    <meta name="title" content="Patias workshop | Front page" />
+    <meta name="description"
+        content="Hello hello and welcome traveller. Thank you for checking out my little workshop">
+    <meta name="keywords"
+        content="portfolio, Patia, Patroski, patpat, workshop, commissions, vtuber, youtuber, streamer, overlays, logo, goblin, graphic, design, art, ">
+    <meta name="robots" content="all" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PWA stuff goes here -->
+    <link rel="manifest" href="./manifest.json" defer>
+    <!-- <script src="./serviceWorker.js" defer></script> -->
+    <meta name="theme-color" content="#ffb6e7"/>
+    <link rel="apple-touch-icon" href="/assets/img/decoration/icons/appIcons/AppIcon_180x180.png">
+    <meta name="color-scheme" content="light only">
+    
+    <script defer>
+          if (navigator && navigator.serviceWorker) {
+      navigator.serviceWorker.register('/serviceWorker.js')
+      .then((reg) => console.log('Service worker is registreded',reg))
+      .catch((err) => console.log('Service worker is not registreded',err))
+    }
+    </script>
+</head>
   <body>
     <div id="root"></div>
   </body>

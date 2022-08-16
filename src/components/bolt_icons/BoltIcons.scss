@@ -1,0 +1,34 @@
+#ArrowBack {
+    position: absolute;
+    width: 30px;
+    top: 5vw;
+    left: 5vw;
+}
+#TLbolt {
+    position: absolute;
+    width: 25px;
+    top: 5vw;
+    left: 5vw;
+    transform: rotate(60deg);
+}
+#TRbolt {
+    position: absolute;
+    width: 25px;
+    top: 5vw;
+    right: 5vw;
+    transform: rotate(90deg);
+}
+#BLbolt {
+    position: absolute;
+    width: 25px;
+    bottom: 5vw;
+    left: 5vw;
+    transform: rotate(20deg);
+}
+#BRbolt {
+    position: absolute;
+    width: 25px;
+    bottom: 5vw;
+    right: 5vw;
+    transform: rotate(-30deg);
+}
