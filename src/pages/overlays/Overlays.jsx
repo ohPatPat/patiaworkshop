@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import { TLbolt, TRbolt, BLbolt, BRbolt, ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
-import { SmolLogo, BtLogos, BtOverlays, BtSchedules } from '../../components/nav/Nav.jsx';
-import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
+import { ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
+import { SmolLogo } from '../../components/nav/Nav.jsx';
+import {  Footer3Icon } from "../../components/footer/Footer.jsx";
+import { OverlaysMain } from "../../components/portfolio/Portfolio.jsx";
 
 export const Overlays = (props) => {
 
@@ -47,22 +47,7 @@ export const Overlays = (props) => {
                 <div className="Padding"></div>
             </header>
             <hr />
-            <main>
-
-                <small>
-                    <a href="">cake</a>
-                </small>
-                <div className="PortImg"></div>
-                <small>
-                    <a href="">cake</a>
-                </small>
-                <div className="PortImg"></div>
-                <small>
-                    <a href="">cake</a>
-                </small>
-                <div className="PortImg"></div>
-
-            </main>
+            <OverlaysMain></OverlaysMain>
             <hr />
             <footer>
                 <Footer3Icon></Footer3Icon>
