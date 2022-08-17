@@ -1,17 +1,40 @@
+import React, { useState } from "react";
+
+
+
+
+
+
 
 
 let LogosArray = [
   {
     vtuber: "Sekigetsu Yuki",
-    img: "../../assets/img/portfolio/logo/Sekigetsu Yuki LogoV2.png",
+    img: "SekigetsuYukiLogoV2.png",
     link: "#",
   },
   {
     vtuber: "@ReinaHardgore",
-    img: "../../assets/img/portfolio/logo/Reina Hardgore-LogoV2.png",
+    img: "ReinaHardgore-LogoV2.png",
     link: "https://twitter.com/ReinaHardgore",
   },
 ];
+
+export const LogoMain = () => {
+  return (
+    LogosArray.map(({ vtuber, img, link }) => (
+      <main key={vtuber}>
+
+        <small>
+          <a href={link}>Made for {vtuber}</a>
+        </small>
+        <img className="PortImgNoShadow" src={require(`../../assets/img/portfolio/logo/${img}`)} alt={vtuber} />
+        <div className="Padding"></div>
+      </main>
+    )
+    ))
+};
+
 
 let OverlaysArray = [
   {
@@ -21,69 +44,86 @@ let OverlaysArray = [
   },
   {
     vtuber: "@senpaihinotama",
-    img: "../../assets/img/portfolio/overlays/SenpaiHinotamaOverlaysWaterMark.png",
+    img: "SenpaiHinotamaOverlaysWaterMark.png",
     link: "https://twitter.com/senpaihinotama",
   },
   {
     vtuber: "@juninya_vt",
-    img: "../../assets/img/portfolio/overlays/JuninyaOverlaysWaterMark.png",
+    img: "JuninyaOverlaysWaterMark.png",
     link: "https://twitter.com/juninya_vt",
   },
   {
     vtuber: "Ellen_s_art",
-    img: "../../assets/img/portfolio/overlays/EllenOverlaysWaterMark.png",
+    img: "EllenOverlaysWaterMark.png",
     link: "https://www.instagram.com/ellen_s_art/",
   },
   {
     vtuber: "@KitsuneKandi",
-    img: "../../assets/img/portfolio/overlays/KitsuneKandiOverlaysWaterMark.png",
+    img: "KitsuneKandiOverlaysWaterMark.png",
     link: "https://twitter.com/KitsuneKandi",
   },
   {
     vtuber: "@ThatMilka",
-    img: "../../assets/img/portfolio/overlays/ThatMilkaOverlaysWaterMark.png",
+    img: "ThatMilkaOverlaysWaterMark.png",
     link: "https://twitter.com/ThatMilka",
   },
   {
     vtuber: "@Zukiiya_vt",
-    img: "../../assets/img/portfolio/overlays/ZukiiOverlaysWaterMark.png",
+    img: "ZukiiOverlaysWaterMark.png",
     link: "https://twitter.com/Zukiiya_vt",
   },
   {
     vtuber: "@ReinaHardgore",
-    img: "../../assets/img/portfolio/overlays/ReinaHardgoreOverlaysWaterMark2.png",
+    img: "ReinaHardgoreOverlaysWaterMark2.png",
     link: "https://twitter.com/ReinaHardgore",
   },
 ];
 
 export const OverlaysMain = () => {
-    return (
-  OverlaysArray.map(({vtuber,img,link}) => (
+  return (
+    OverlaysArray.map(({ vtuber, img, link }) => (
       <main key={vtuber}>
 
         <small>
-          <a href={link}>{vtuber}</a>
+          <a href={link}>Made for {vtuber}</a>
         </small>
-        <img src="../../assets/img/portfolio/overlays/"{img} alt={vtuber} />
+        <img className="PortImg" src={require(`../../assets/img/portfolio/overlays/${img}`)} alt={vtuber} />
+        <div className="Padding"></div>
       </main>
-  )
-  ))
+    )
+    ))
 };
 
 let SchedulesArray = [
   {
     vtuber: "@HanamiyaChii",
-    img: "../../assets/img/portfolio/schedules/WeeklySchedule.png",
+    img: "WeeklySchedule.png",
     link: "https://twitter.com/HanamiyaChii",
   },
   {
     vtuber: "@moenaomii",
-    img: "../../assets/img/portfolio/schedules/Moe-WeeklySchedule.png",
+    img: "Moe-WeeklySchedule.png",
     link: "https://twitter.com/moenaomii",
   },
   {
     vtuber: "@ReinaHardgore",
-    img: "../../assets/img/portfolio/schedules/Reina Hardgore-WeeklySchedulev2.png",
+    img: "Reina Hardgore-WeeklySchedulev2.png",
     link: "https://twitter.com/ReinaHardgore",
   },
 ];
+
+export const SchedulesMain = () => {
+  return (
+    SchedulesArray.map(({ vtuber, img, link }) => (
+      <main key={vtuber}>
+
+        <small>
+          <a href={link}>Made for {vtuber}</a>
+        </small>
+        <img className="PortImg" src={require(`../../assets/img/portfolio/schedules/${img}`)} alt={vtuber} />
+        <div className="Padding"></div>
+      </main>
+    )
+    ))
+};
+

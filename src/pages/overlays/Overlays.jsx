@@ -1,6 +1,6 @@
 import { ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
 import { SmolLogo } from '../../components/nav/Nav.jsx';
-import {  Footer3Icon } from "../../components/footer/Footer.jsx";
+import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import { OverlaysMain } from "../../components/portfolio/Portfolio.jsx";
 
 export const Overlays = (props) => {
@@ -13,7 +13,7 @@ export const Overlays = (props) => {
                 <SmolLogo></SmolLogo>
                 <div className="Padding"></div>
                 <h1 id="PageTitle">
-                    Overlay Design
+                    Overlay Designs
                 </h1>
                 <p>
                     Startup pack (2 overlays) - 50€
@@ -53,6 +53,7 @@ export const Overlays = (props) => {
                 <Footer3Icon></Footer3Icon>
             </footer>
         </section>
+
 
     )
 

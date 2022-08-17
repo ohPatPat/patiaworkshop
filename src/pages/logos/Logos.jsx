@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { TLbolt, TRbolt, BLbolt, BRbolt, ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
 import { SmolLogo, BtLogos, BtOverlays, BtSchedules } from '../../components/nav/Nav.jsx';
 import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
+import { LogoMain } from "../../components/portfolio/Portfolio.jsx";
 
 export const Logos = (props) => {
 
@@ -13,7 +14,7 @@ export const Logos = (props) => {
                 <SmolLogo></SmolLogo>
                 <div className="Padding"></div>
                 <h1 id="PageTitle">
-                    Logo design
+                    Logo designs
                 </h1>
                 <p>
                     A logo - 75€
@@ -25,8 +26,7 @@ export const Logos = (props) => {
                 <div className="Padding"></div>
             </header>
             <hr />
-            <main>
-            </main>
+            <LogoMain></LogoMain>
             <hr />
             <footer>
                 <Footer3Icon></Footer3Icon>
