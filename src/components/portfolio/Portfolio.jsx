@@ -120,10 +120,19 @@ export const SchedulesMain = () => {
         <small>
           <a href={link}>Made for {vtuber}</a>
         </small>
-        <img className="PortImg" src={require(`../../assets/img/portfolio/schedules/${img}`)} alt={vtuber} />
+        <img className="PortImg" src={require(`../../assets/img/portfolio/schedules/${img}`)} alt={vtuber} onClick={this.Modal}></img>/>
         <div className="Padding"></div>
       </main>
     )
     ))
 };
 
+export const Modal = () => {
+
+
+  const CloseModal = event =>{
+    event.currentTarget.classList.remove('HiddenModal')  }
+  return (
+    <figure className="HiddenModal" onClick={CloseModal}></figure>
+    )
+};

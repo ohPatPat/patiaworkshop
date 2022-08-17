@@ -10,6 +10,7 @@ import { Menu } from './pages/menu/Menu'
 import { Overlays } from './pages/overlays/Overlays'
 import { Schedules } from './pages/schedules/Schedules'
 import { TOS } from './pages/tos/TOS'
+import { Modal } from "./components/portfolio/Portfolio.jsx";
 
 const Redirect = ({ to }) => {
   let navigate = useNavigate();
@@ -22,6 +23,7 @@ const Redirect = ({ to }) => {
 function App() {
   return (
     <div id='Card'>
+      <Modal></Modal>
       <TRbolt />
 
       <Router>
