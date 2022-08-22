@@ -3,11 +3,14 @@ import { TLbolt, TRbolt, BLbolt, BRbolt, ArrowIcon } from '../../components/bolt
 import { SmolLogo, BtLogos, BtOverlays, BtSchedules } from '../../components/nav/Nav.jsx';
 import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
 import { LogoMain } from "../../components/portfolio/Portfolio.jsx";
+import { MetaTags } from "../../components/MetaTags.jsx";
+
 
 export const Logos = (props) => {
 
     return (
         <section id="Logos">
+            <MetaTags title={props.title}></MetaTags>
             <ArrowIcon></ArrowIcon>
             <header>
                 <h5>{props.title}</h5>

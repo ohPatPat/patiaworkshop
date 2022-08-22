@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { TLbolt, TRbolt, BLbolt, BRbolt } from '../../components/bolt_icons/BoltIcons.jsx';
 import { SmolLogo, BtLogos, BtOverlays, BtSchedules } from '../../components/nav/Nav.jsx';
+import { MetaTags } from "../../components/MetaTags.jsx";
+
 
 export const TOS = (props) => {
 
     return (
         <section id="TOS">
+            <MetaTags title={props.title}></MetaTags>
             <TLbolt></TLbolt>
             <header>
                 <h5>{props.title}</h5>

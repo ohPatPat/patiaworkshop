@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
 
-
-
-
-
-
-
 let LogosArray = [
   {
     vtuber: "Sekigetsu Yuki",
@@ -120,19 +114,19 @@ export const SchedulesMain = () => {
         <small>
           <a href={link}>Made for {vtuber}</a>
         </small>
-        <img className="PortImg" src={require(`../../assets/img/portfolio/schedules/${img}`)} alt={vtuber} onClick={this.Modal}></img>/>
+        <img className="PortImg" src={require(`../../assets/img/portfolio/schedules/${img}`)} alt={vtuber} onClick={HandleToggle}></img>
         <div className="Padding"></div>
       </main>
     )
     ))
 };
 
-export const Modal = () => {
+export const HandleToggle = () => {
+  const [HiddenModal, setHidden] = useState("false");
+  const HandleToggle = () => {
+    setHidden(!HiddenModal);  };
 
-
-  const CloseModal = event =>{
-    event.currentTarget.classList.remove('HiddenModal')  }
   return (
-    <figure className="HiddenModal" onClick={CloseModal}></figure>
+    <figure className={HiddenModal ? "app" : null} onClick={HandleToggle}></figure>
     )
 };

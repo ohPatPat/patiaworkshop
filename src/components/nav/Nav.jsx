@@ -29,9 +29,9 @@ export const SmolLogo = () => {
     )
 }
 
-export const BtAbout = () => {
+export const BtAbout = (props) => {
     return (
-        <NavLink to="/about">
+        <NavLink to="/aboutMe">
             <img className='Bt' src={Buttons_AboutMe} alt="Buttons_AboutMe" />
         </NavLink>
     )

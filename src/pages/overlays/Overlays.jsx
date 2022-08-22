@@ -2,11 +2,14 @@ import { ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
 import { SmolLogo } from '../../components/nav/Nav.jsx';
 import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import { OverlaysMain } from "../../components/portfolio/Portfolio.jsx";
+import { MetaTags } from "../../components/MetaTags.jsx";
+
 
 export const Overlays = (props) => {
 
     return (
         <section id="Overlays">
+            <MetaTags title={props.title}></MetaTags>
             <ArrowIcon></ArrowIcon>
             <header>
                 <h5>{props.title}</h5>

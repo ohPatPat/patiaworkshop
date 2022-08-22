@@ -4,12 +4,15 @@ import { BtInv } from '../../components/nav/Nav.jsx';
 import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
 import HypeFace from "../../assets/img/decoration/faces/GoblinFace_Hyped.png"
 import HappyFace from "../../assets/img/decoration/faces/GoblinFace_Happy.png"
+import { MetaTags } from "../../components/MetaTags.jsx";
 
 
 export const About = (props) => {
 
     return (
+
         <section id="About">
+            <MetaTags title={props.title}></MetaTags>
             <ArrowIcon></ArrowIcon>
             <header>
                 <h5>{props.title}</h5>
