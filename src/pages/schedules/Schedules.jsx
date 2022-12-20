@@ -30,7 +30,9 @@ export const Schedules = (props) => {
                 <div className="Padding"></div>
             </header>
             <hr />
+            <main>
             <SchedulesMain></SchedulesMain>
+            </main>
             <hr />
             <footer>
                 <Footer3Icon></Footer3Icon>

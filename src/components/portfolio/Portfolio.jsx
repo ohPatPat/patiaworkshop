@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 let LogosArray = [
   {
     vtuber: "Sekigetsu Yuki",
@@ -15,20 +14,22 @@ let LogosArray = [
 ];
 
 export const LogoMain = () => {
-  return (
-    LogosArray.map(({ vtuber, img, link }) => (
-      <main key={vtuber}>
-
-        <small>
-          <a href={link}>Made for {vtuber}</a>
-        </small>
-        <img className="PortImgNoShadow" src={require(`../../assets/img/portfolio/logo/${img}`)} alt={vtuber} />
-        <div className="Padding"></div>
-      </main>
-    )
-    ))
+  return LogosArray.map(({ vtuber, img, link }) => (
+    <figure className="ProductWrapper" key={vtuber}>
+        <img
+          className="PortImgNoShadow"
+          src={require(`../../assets/img/portfolio/logo/${img}`)}
+          alt={vtuber}
+        />
+        <figcaption>
+          <small>
+            <a href={link}>Made for {vtuber}</a>
+          </small>
+        </figcaption>
+      <div className="Padding"></div>
+    </figure>
+  ));
 };
-
 
 let OverlaysArray = [
   {
@@ -74,18 +75,21 @@ let OverlaysArray = [
 ];
 
 export const OverlaysMain = () => {
-  return (
-    OverlaysArray.map(({ vtuber, img, link }) => (
-      <main key={vtuber}>
-
-        <small>
-          <a href={link}>Made for {vtuber}</a>
-        </small>
-        <img className="PortImg" src={require(`../../assets/img/portfolio/overlays/${img}`)} alt={vtuber} />
-        <div className="Padding"></div>
-      </main>
-    )
-    ))
+  return OverlaysArray.map(({ vtuber, img, link }) => (
+    <figure className="ProductWrapper" key={vtuber}>
+        <img
+          className="PortImg"
+          src={require(`../../assets/img/portfolio/overlays/${img}`)}
+          alt={vtuber}
+        />
+        <figcaption>
+          <small>
+            <a href={link}>Made for {vtuber}</a>
+          </small>
+        </figcaption>
+      <div className="Padding"></div>
+    </figure>
+  ));
 };
 
 let SchedulesArray = [
@@ -107,26 +111,34 @@ let SchedulesArray = [
 ];
 
 export const SchedulesMain = () => {
-  return (
-    SchedulesArray.map(({ vtuber, img, link }) => (
-      <main key={vtuber}>
-
-        <small>
-          <a href={link}>Made for {vtuber}</a>
-        </small>
-        <img className="PortImg" src={require(`../../assets/img/portfolio/schedules/${img}`)} alt={vtuber} onClick={HandleToggle}></img>
-        <div className="Padding"></div>
-      </main>
-    )
-    ))
+  return SchedulesArray.map(({ vtuber, img, link }) => (
+    <figure className="ProductWrapper" key={vtuber}>
+      <img
+        className="PortImg"
+        src={require(`../../assets/img/portfolio/schedules/${img}`)}
+        alt={vtuber}
+        onClick={HandleToggle}
+        ></img>
+        <figcaption>
+          <small>
+            <a href={link}>Made for {vtuber}</a>
+          </small>
+        </figcaption>
+      <div className="Padding"></div>
+    </figure>
+  ));
 };
 
 export const HandleToggle = () => {
-  const [HiddenModal, setHidden] = useState("false");
+  const [HiddenModal, setHidden] = useState("true");
   const HandleToggle = () => {
-    setHidden(!HiddenModal);  };
+    setHidden(!HiddenModal);
+  };
 
   return (
-    <figure className={HiddenModal ? "app" : null} onClick={HandleToggle}></figure>
-    )
+    <figure id="Modal"
+      className={HiddenModal ? "app" : null}
+      onClick={HandleToggle}
+    ></figure>
+  );
 };

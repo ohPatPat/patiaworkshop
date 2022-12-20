@@ -50,7 +50,9 @@ export const Overlays = (props) => {
                 <div className="Padding"></div>
             </header>
             <hr />
+            <main>
             <OverlaysMain></OverlaysMain>
+            </main>
             <hr />
             <footer>
                 <Footer3Icon></Footer3Icon>

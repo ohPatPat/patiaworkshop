@@ -27,7 +27,7 @@ export const Home = (props) => {
                     <br />
                     On this site you can find, all my commissions I have done for different Vtubers over the years.
                     <br />
-                    I do stuff like -
+                    Stuff like -
                 </p>
                 <ul className="TextColor">
                     <li>

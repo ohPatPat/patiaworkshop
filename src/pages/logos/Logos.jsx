@@ -29,7 +29,9 @@ export const Logos = (props) => {
                 <div className="Padding"></div>
             </header>
             <hr />
+            <main>
             <LogoMain></LogoMain>
+            </main>
             <hr />
             <footer>
                 <Footer3Icon></Footer3Icon>
