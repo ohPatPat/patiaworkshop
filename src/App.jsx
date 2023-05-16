@@ -11,7 +11,6 @@ import { Overlays } from './pages/overlays/Overlays'
 import { Schedules } from './pages/schedules/Schedules'
 import { TOS } from './pages/tos/TOS'
 import { Error } from './pages/error/Error'
-import { HandleToggle } from "./components/portfolio/Portfolio.jsx";
 import { Flower } from './components/loader/Flower'
 
 
@@ -28,7 +27,6 @@ function App() {
     <>
     <Flower></Flower>
       <div id='Card'>
-        <HandleToggle></HandleToggle>
         <TRbolt />
 
         <Router>
