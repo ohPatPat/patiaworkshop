@@ -32,3 +32,41 @@
     right: 5vw;
     transform: rotate(-30deg);
 }
+
+@media (min-width: 1366px) {
+    #ArrowBack {
+        position: absolute;
+        width: 35px;
+        top: 1vw;
+        left: 1vw;
+    }
+    #TLbolt {
+        position: absolute;
+        width: 30px;
+        top: 1vw;
+        left: 1vw;
+        transform: rotate(60deg);
+    }
+    #TRbolt {
+        position: absolute;
+        width: 30px;
+        top: 1vw;
+        right: 1vw;
+        transform: rotate(90deg);
+    }
+    #BLbolt {
+        position: absolute;
+        width: 30px;
+        bottom: 1vw;
+        left:1vw;
+        transform: rotate(20deg);
+    }
+    #BRbolt {
+        position: absolute;
+        width: 30px;
+        bottom: 1vw;
+        right: 1vw;
+        transform: rotate(-30deg);
+    }
+    
+}

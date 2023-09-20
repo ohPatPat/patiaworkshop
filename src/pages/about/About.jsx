@@ -34,15 +34,15 @@ export const About = (props) => {
                     <br />
                     <br />
 
-                    I'm a g-goblin of many hobbies UwU. I enjoy spending my time on losing in video games, watching cartoons and building cool and creative stuff for really hecking'awesome people.
+                    I'm a g-goblin of many hobbies. I enjoy spending my time on losing in video games, watching cartoons and building cool and creative stuff for really hecking'awesome people.
                 </p>
                 <img id='HappyFace' src={HappyFace} alt="HappyFace" />
                 <p className="AboutText">
-                    T-Thats why I started my little cute web-workshop, as a means to easily help others, especially for newcomers that are just starting up.
+                    T-Thats why I started my little cute web-shop, as a means to easily help others, especially for newcomers that are just starting up streaming.
                     <br />
                     <br />
 
-                    Even tho i'm pretty young, I have actually already graduated from a graphic designer school (tho it's a school for Goblins & Grimlins, so take that with a pinch of salt). I'm currently specializrd in making graphics and assets for hecking'awesome Vtubers!.. tho can easily work with other cool people aswell ofc :3
+                    I graduated from a graphic designer school (tho it's a school for Goblins & Grimlins, so take that with a pinch of salt). I'm currently specializrd in making graphics and assets for Vtubers!.. tho can easily work with other cool people aswell ofc :3
                     <br />
                     <br />
 

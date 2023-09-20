@@ -20,6 +20,7 @@ export const LogoMain = () => {
           className="PortImgNoShadow"
           src={require(`../../assets/img/portfolio/logo/${img}`)}
           alt={vtuber}
+          loading="lazy"
         />
         <figcaption>
           <small>
@@ -81,6 +82,7 @@ export const OverlaysMain = () => {
           className="PortImg"
           src={require(`../../assets/img/portfolio/overlays/${img}`)}
           alt={vtuber}
+          loading="lazy"
         />
         <figcaption>
           <small>
@@ -117,6 +119,7 @@ export const SchedulesMain = () => {
         className="PortImg"
         src={require(`../../assets/img/portfolio/schedules/${img}`)}
         alt={vtuber}
+        loading="lazy"
         onClick={HandleToggle}
         ></img>
         <figcaption>

@@ -23,9 +23,9 @@ export const ClassicLogo = () => {
 }
 export const SmolLogo = () => {
     return (
-        <NavLink to="/">
+        <>
             <img id='SmolLogo' src={Logo_Basic} alt="PatiaLogo_Basic" />
-        </NavLink>
+        </>
     )
 }
 

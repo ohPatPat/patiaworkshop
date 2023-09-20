@@ -294,36 +294,33 @@ section {
       display: block;
       position: relative;
 
+      .PortImg {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.267);
+      }
+      .PortImgNoShadow {
+        width: 100%;
+        height: auto;
+      }
 
-        .PortImg {
-            width: 100%;
-            height: auto;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.267);
-          }
-          .PortImgNoShadow {
-            width: 100%;
-            height: auto;
-          }
-      
-
-        figcaption {
-          width: 100%;
-          small {
-            padding: 3vw 0;
-            font-size: 3.2vw;
-            line-height: 0.5;
-            text-align: right;
-            float: right;
-            a {
-              color: $Pink;
-              font-family: industry-inc-base, sans-serif;
-              &:hover {
-                text-decoration: underline;
-              }
+      figcaption {
+        width: 100%;
+        small {
+          padding: 3vw 0;
+          font-size: 3.2vw;
+          line-height: 0.5;
+          text-align: right;
+          float: right;
+          a {
+            color: $Pink;
+            font-family: industry-inc-base, sans-serif;
+            &:hover {
+              text-decoration: underline;
             }
           }
         }
-      
+      }
     }
     .Padding {
       padding-bottom: 4vh;
@@ -347,7 +344,7 @@ section {
         font-size: 4vw;
       }
       &#TosText2 {
-        padding: 3vw 0 4vw;
+        padding: 5vw 0 2vw;
         font-size: 4vw;
       }
     }
@@ -395,6 +392,357 @@ section {
     }
     span {
       padding-bottom: 5vh;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6vw;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .InputWrapper,
+      .InputWrapperError,
+      .TextareaError {
+        &.InputWrapperError,
+        &.TextareaError {
+          input,
+          textarea {
+            border: solid 3px red;
+          }
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 3vw;
+          border-radius: 3vw;
+          resize: none;
+
+          font-size: 3.5vw;
+        }
+      }
+      span {
+        padding: 0;
+        line-height: 2;
+        color: red;
+        font-size: 4vw;
+        font-weight: 600;
+      }
+
+      button {
+        width: 40%;
+        margin: auto;
+        padding: 3vw 7vw 1vw;
+      }
+
+      #noShow {
+        display: none;
+        margin-top: 5vw;
+        transform: scale(300%);
+      }
+      #Show {
+        display: block;
+        margin-top: 5vw;
+        transform: scale(300%);
+      }
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  body {
+    background-image: url(./assets/img/decoration/backgrounds/bigDarkBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #Space {
+    padding-bottom: 10vw;
+  }
+  #Card {
+    color: $Pink;
+    position: relative;
+    background-image: url(./assets/img/decoration/backgrounds/BackgroundV2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    outline: 4px solid $Pink;
+    outline-offset: -0.5vw;
+    width: 25vw;
+    height: 100%;
+    padding-top: 1px;
+    top: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5vw;
+    animation: none;
+    box-shadow: 0px 0px 31px 8px rgba(0, 0, 0, 0.1);
+  }
+  section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3vw;
+
+    &#Error {
+      height: 100vh;
+      header {
+        height: 100vh;
+        position: relative;
+        h1 {
+          font-size: 2vw;
+          position: absolute;
+          color: $Pink;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .Padding {
+      padding-bottom: 2vh;
+    }
+    .Span {
+      padding-bottom: 70vh;
+    }
+    header {
+      h1 {
+        font-family: industry-inc-base, sans-serif;
+        padding: 2vw 0 1vw;
+        font-size: 2vw;
+        line-height: 1.3;
+        &#PageTitle {
+          padding: 0vw 0 0;
+          font-size: 2vw;
+          line-height: 1.3;
+          text-transform: uppercase;
+          font-family: industry-inc-base, sans-serif;
+        }
+        &#TOSTitle {
+          padding: 2vw 0 0;
+          font-size: 2vw;
+          line-height: 1.3;
+          text-transform: uppercase;
+          font-family: industry-inc-base, sans-serif;
+        }
+      }
+
+      h5 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 50%;
+        top: 3vh;
+      }
+      strong {
+        font-size: 6vw;
+        line-height: 1.6;
+        text-align: center;
+      }
+      p {
+        font-size: 1.3vw;
+        line-height: 1.5;
+      }
+      .Extra {
+        line-height: 2;
+      }
+      small {
+        font-size: 4.5vw;
+        line-height: 1.5;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+      }
+      hr {
+        margin: 1vh 0;
+        background-color: $Pink;
+        border-top: 1px solid;
+      }
+    }
+    hr {
+      margin: 1vw 0;
+      background-color: $Pink;
+      border-top: 1px solid;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .ProductWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        display: block;
+        position: relative;
+
+        .PortImg {
+          width: 100%;
+          height: auto;
+          box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.267);
+        }
+        .PortImgNoShadow {
+          width: 100%;
+          height: auto;
+        }
+
+        figcaption {
+          width: 100%;
+          small {
+            padding: 3vw 0;
+            font-size: 3.2vw;
+            line-height: 0.5;
+            text-align: right;
+            float: right;
+            a {
+              color: $Pink;
+              font-family: industry-inc-base, sans-serif;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .Padding {
+        padding-bottom: 4vh;
+      }
+      strong {
+        padding: 1vw 0;
+        font-size: 1.5vw;
+        line-height: 1.3;
+        text-align: left;
+      }
+      p {
+        padding: 1vw 0;
+        font-size: 1.3vw;
+        line-height: 1.3;
+
+        &.AboutText {
+          text-align: left;
+        }
+        &#TosText1 {
+          padding: 2vw 0 0;
+          font-size: 1vw;
+        }
+        &#TosText2 {
+          padding: 2vw 0 1vw;
+          font-size: 1vw;
+        }
+      }
+      ul {
+        padding: 1vw 0vw;
+        li {
+          font-size: 2vw;
+          font-weight: bold;
+          line-height: 1.5;
+          font-family: industry-inc-base, sans-serif;
+        }
+        &#TOSText {
+          padding: 1vw 0vw;
+          li {
+            text-align: left;
+            font-size: 1vw;
+            font-weight: 400;
+            line-height: 1.5;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+      }
+      #HypeFace {
+        width: 75%;
+        margin: auto;
+        padding: 1vh 0;
+      }
+      #HappyFace {
+        width: 90%;
+        margin: auto;
+        padding: 3vh 0;
+      }
+      button {
+        background-color: $Pink;
+        margin-top: 1vw;
+        padding: 1vw 2vw 0.7vw;
+        border-radius: 50px;
+        border: 3px solid $Pink;
+
+        color: $Green;
+        font-size: 1vw;
+        font-family: industry-inc-base, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      span {
+        padding-bottom: 4vh;
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+
+        .InputWrapper,
+        .InputWrapperError,
+        .TextareaError {
+          &.InputWrapperError,
+          &.TextareaError {
+            input,
+            textarea {
+              border: solid 3px red;
+            }
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 3vw;
+            border-radius: 3vw;
+            resize: none;
+
+            font-size: 3.5vw;
+          }
+        }
+        span {
+          padding: 0;
+          line-height: 2;
+          color: red;
+          font-size: 4vw;
+          font-weight: 600;
+        }
+
+        button {
+          width: 40%;
+          margin: auto;
+          padding: 3vw 7vw 1vw;
+        }
+
+        #noShow {
+          display: none;
+          margin-top: 5vw;
+          transform: scale(300%);
+        }
+        #Show {
+          display: block;
+          margin-top: 5vw;
+          transform: scale(300%);
+        }
+      }
     }
   }
 }

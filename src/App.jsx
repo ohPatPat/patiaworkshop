@@ -10,8 +10,8 @@ import { Menu } from './pages/menu/Menu'
 import { Overlays } from './pages/overlays/Overlays'
 import { Schedules } from './pages/schedules/Schedules'
 import { TOS } from './pages/tos/TOS'
+import { Contact } from './pages/contact/Contact'
 import { Error } from './pages/error/Error'
-import { HandleToggle } from "./components/portfolio/Portfolio.jsx";
 import { Flower } from './components/loader/Flower'
 
 
@@ -28,7 +28,6 @@ function App() {
     <>
     <Flower></Flower>
       <div id='Card'>
-        <HandleToggle></HandleToggle>
         <TRbolt />
 
         <Router>
@@ -40,6 +39,7 @@ function App() {
             <Route path="/overlays" element={<Overlays title={"Patia's workshop | Overlays commission page"} />} />
             <Route path="/schedules" element={<Schedules title={"Patia's workshop | Schedules commission page"} />} />
             <Route path="/tos" element={<TOS title={"Patia's workshop | TOS page"} />} />
+            <Route path="/contact" element={<Contact title={"Patia's workshop | Contact page"} />} />
             <Route path="*" element={<Error title={"Patia's workshop | lkjgljf page"} />} />
           </Routes>
         </Router>
@@ -48,6 +48,7 @@ function App() {
         <BLbolt />
         <BRbolt />
       </div>
+      <div id="Space"></div>
     </>
   );
 }
