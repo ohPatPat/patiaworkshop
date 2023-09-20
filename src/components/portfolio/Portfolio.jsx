@@ -120,7 +120,6 @@ export const SchedulesMain = () => {
         src={require(`../../assets/img/portfolio/schedules/${img}`)}
         alt={vtuber}
         loading="lazy"
-        onClick={HandleToggle}
         ></img>
         <figcaption>
           <small>
