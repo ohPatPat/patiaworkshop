@@ -24,7 +24,7 @@ export const LogoMain = () => {
         />
         <figcaption>
           <small>
-            <a href={link}>Made for {vtuber}</a>
+            <a href={link} target="blank">Made for {vtuber}</a>
           </small>
         </figcaption>
       <div className="Padding"></div>
@@ -86,7 +86,7 @@ export const OverlaysMain = () => {
         />
         <figcaption>
           <small>
-            <a href={link}>Made for {vtuber}</a>
+            <a href={link} target="blank">Made for {vtuber}</a>
           </small>
         </figcaption>
       <div className="Padding"></div>
@@ -124,7 +124,7 @@ export const SchedulesMain = () => {
         ></img>
         <figcaption>
           <small>
-            <a href={link}>Made for {vtuber}</a>
+            <a href={link} target="blank">Made for {vtuber}</a>
           </small>
         </figcaption>
       <div className="Padding"></div>
@@ -132,16 +132,3 @@ export const SchedulesMain = () => {
   ));
 };
 
-export const HandleToggle = () => {
-  const [HiddenModal, setHidden] = useState("true");
-  const HandleToggle = () => {
-    setHidden(!HiddenModal);
-  };
-
-  return (
-    <figure id="Modal"
-      className={HiddenModal ? "app" : null}
-      onClick={HandleToggle}
-    ></figure>
-  );
-};
