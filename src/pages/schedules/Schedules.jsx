@@ -12,7 +12,7 @@ export const Schedules = (props) => {
     return (
         <section id="Schedules">
             <MetaTags title={props.title}></MetaTags>
-            <ArrowIcon></ArrowIcon>
+            <ArrowIcon season={props.season}></ArrowIcon>
             <header>
                 <h5>{props.title}</h5>
                 <SmolLogo></SmolLogo>
@@ -35,7 +35,7 @@ export const Schedules = (props) => {
             </main>
             <hr />
             <footer>
-                <Footer3Icon></Footer3Icon>
+                <Footer3Icon season={props.season}/>
             </footer>
         </section>
 

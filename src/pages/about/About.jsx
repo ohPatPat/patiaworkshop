@@ -11,9 +11,9 @@ export const About = (props) => {
 
     return (
 
-        <section id="About">
+        <section id="About" className="TextColor">
             <MetaTags title={props.title}></MetaTags>
-            <ArrowIcon></ArrowIcon>
+            <ArrowIcon season={props}/>
             <header>
                 <h5>{props.title}</h5>
                 <div className="Padding"></div>
@@ -24,17 +24,17 @@ export const About = (props) => {
             </header>
             <main>
                 <img id='HypeFace' src={HypeFace} alt="HypeFace" />
-                <strong >O-Oh hello again traveller!</strong>
+                <strong className="TextColor">O-Oh hello again traveller!</strong>
 
                 <p className="AboutText">
                     My name is Patia.. Patia Patroski the goblin, but you can just call me PatPat for short UwU
                     <br />
                     <br />
-                    I-I am a shy but curious slavic goblin who likes living a peaceful hobbit'like lifestyle. THO! I don't mind a graphical challenge! >:3
+                    I-I am a curious goblin with slavic origin, who likes living a peaceful hobbit'like lifestyle. THO! I don't mind a graphical challenge! >:3
                     <br />
                     <br />
 
-                    I'm a g-goblin of many hobbies. I enjoy spending my time on losing in video games, watching cartoons and building cool and creative stuff for really hecking'awesome people.
+                    I'm a g-goblin of many hobbies. I enjoy spending my time on losing in video games, watching cartoons and building cool and creative stuff for hecking'awesome people.
                 </p>
                 <img id='HappyFace' src={HappyFace} alt="HappyFace" />
                 <p className="AboutText">
@@ -42,16 +42,16 @@ export const About = (props) => {
                     <br />
                     <br />
 
-                    I graduated from a graphic designer school (tho it's a school for Goblins & Grimlins, so take that with a pinch of salt). I'm currently specializrd in making graphics and assets for Vtubers!.. tho can easily work with other cool people aswell ofc :3
+                    I graduated from a graphic designer school (tho it's a school for Goblins & Grimlins, so take that with a pinch of salt). I'm currently specialized in making graphics and assets for Vtubers!.. tho can easily work with other cool people aswell ofc :3
                     <br />
                     <br />
 
                     Feel free to click on "my inventory" and maybe you will find something interesting, that will inspire you ^^
                 </p>
-                <BtInv></BtInv>
+                <BtInv season={props.season}></BtInv>
             </main>
             <footer>
-                <Footer3Icon></Footer3Icon>
+                <Footer3Icon season={props.season}/>
             </footer>
         </section>
     )

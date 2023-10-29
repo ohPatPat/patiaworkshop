@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 
 let LogosArray = [
   {
@@ -16,17 +17,19 @@ let LogosArray = [
 export const LogoMain = () => {
   return LogosArray.map(({ vtuber, img, link }) => (
     <figure className="ProductWrapper" key={vtuber}>
-        <img
-          className="PortImgNoShadow"
-          src={require(`../../assets/img/portfolio/logo/${img}`)}
-          alt={vtuber}
-          loading="lazy"
-        />
-        <figcaption>
-          <small>
-            <a href={link} target="blank">Made for {vtuber}</a>
-          </small>
-        </figcaption>
+      <img
+        className="PortImgNoShadow"
+        src={require(`../../assets/img/portfolio/logo/${img}`)}
+        alt={vtuber}
+        loading="lazy"
+      />
+      <figcaption>
+        <small>
+          <a href={link} target="blank">
+            Made for {vtuber}
+          </a>
+        </small>
+      </figcaption>
       <div className="Padding"></div>
     </figure>
   ));
@@ -78,17 +81,20 @@ let OverlaysArray = [
 export const OverlaysMain = () => {
   return OverlaysArray.map(({ vtuber, img, link }) => (
     <figure className="ProductWrapper" key={vtuber}>
-        <img
-          className="PortImg"
-          src={require(`../../assets/img/portfolio/overlays/${img}`)}
-          alt={vtuber}
-          loading="lazy"
-        />
-        <figcaption>
-          <small>
-            <a href={link} target="blank">Made for {vtuber}</a>
-          </small>
-        </figcaption>
+      <img
+        className="PortImg"
+        src={require(`../../assets/img/portfolio/overlays/${img}`)}
+        alt={vtuber}
+        loading="lazy"
+      />
+      <figcaption>
+        <small>
+          <a href={link} target="blank">
+            Made for {vtuber}
+          </a>
+        </small>
+      </figcaption>
+
       <div className="Padding"></div>
     </figure>
   ));
@@ -113,21 +119,23 @@ let SchedulesArray = [
 ];
 
 export const SchedulesMain = () => {
+
   return SchedulesArray.map(({ vtuber, img, link }) => (
-    <figure className="ProductWrapper" key={vtuber}>
-      <img
-        className="PortImg"
-        src={require(`../../assets/img/portfolio/schedules/${img}`)}
-        alt={vtuber}
-        loading="lazy"
-        ></img>
-        <figcaption>
-          <small>
-            <a href={link} target="blank">Made for {vtuber}</a>
-          </small>
-        </figcaption>
-      <div className="Padding"></div>
-    </figure>
+            <figure className="ProductWrapper" key={vtuber}>
+              <img
+                className="PortImg"
+                src={require(`../../assets/img/portfolio/schedules/${img}`)}
+                alt={vtuber}
+                loading="lazy"
+              ></img>
+              <figcaption>
+                <small>
+                  <a href={link} target="blank">
+                    Made for {vtuber}
+                  </a>
+                </small>
+              </figcaption>
+              <div className="Padding"></div>
+            </figure>
   ));
 };
-

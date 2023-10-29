@@ -18,7 +18,7 @@ export const Menu = (props) => {
   return (
     <section id="Menu">
       <MetaTags title={props.title}></MetaTags>
-      <TLbolt></TLbolt>
+      <TLbolt season={props.season}></TLbolt>
       <header>
         <h5>{props.title}</h5>
         <ClassicLogo></ClassicLogo>
@@ -30,23 +30,29 @@ export const Menu = (props) => {
           <br />
           If you're looking for something else, dont be afraid to just d-dm me.
         </p>
-        <BtLogos></BtLogos>
-        <BtOverlays></BtOverlays>
-        <BtSchedules></BtSchedules>
+        <BtLogos season={props.season}></BtLogos>
+        <BtOverlays season={props.season}></BtOverlays>
+        <BtSchedules season={props.season}></BtSchedules>
 
         <p id="TosText1">Please remember to read my</p>
-        <NavLink to="/tos">
+        <NavLink
+          className={` ${props.season ? "ChristmasButton" : ""}`}
+          to="/tos"
+        >
           <button>Terms of services</button>
         </NavLink>
         <p id="TosText2">before -</p>
-        <NavLink to="/contact">
+        <NavLink
+          className={` ${props.season ? "ChristmasButton" : ""}`}
+          to="/contact"
+        >
           <button>Contacting me</button>
         </NavLink>
         <span></span>
       </main>
       <hr />
       <footer>
-        <Footer3Icon></Footer3Icon>
+        <Footer3Icon season={props.season} />
       </footer>
     </section>
   );

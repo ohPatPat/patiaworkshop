@@ -14,7 +14,7 @@ export const Home = (props) => {
     <section id="Home">
       <MetaTags title={props.title}></MetaTags>
 
-      <TLbolt></TLbolt>
+      <TLbolt season={props.season}></TLbolt>
       <header>
         <h5>{props.title}</h5>
         <ClassicLogo></ClassicLogo>
@@ -44,11 +44,11 @@ export const Home = (props) => {
           know more about me, then feel free to click on one of the big buttons
           below.
         </p>
-        <BtAbout></BtAbout>
-        <BtInv></BtInv>
+        <BtAbout season={props.season}></BtAbout>
+        <BtInv season={props.season}></BtInv>
       </main>
       <footer>
-        <Footer3Icon></Footer3Icon>
+        <Footer3Icon season={props.season}/>
       </footer>
     </section>
   );

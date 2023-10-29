@@ -84,118 +84,124 @@ export const Contact = (props) => {
   return (
     <section id="Contact">
       <MetaTags title={props.title}></MetaTags>
-      <ArrowIcon></ArrowIcon>
+      <ArrowIcon season={props.season}></ArrowIcon>
       <header>
         <h5>{props.title}</h5>
         <SmolLogo></SmolLogo>
         <h1 id="TOSTitle">Commission form</h1>
-        <p>DId you find my work cool? <br /> Then feel free to DM me by just filling out the form down below.
-        <br />
-        <br />
-        <i> I'll respown as soon as possible! :D </i>
+        <p>
+          DId you find my work cool? <br /> Then feel free to DM me by just
+          filling out the form down below.
+          <br />
+          <br />
+          <i> I'll respown as soon as possible! :D </i>
         </p>
       </header>
       <hr />
       <main>
         <span></span>
         <form id="Form" ref={form} onSubmit={handleSubmit(sendEmail)}>
-          <div
-            className={
-              Error || errors.userName ? "InputWrapperError" : "InputWrapper"
-            }
-          >
-            <input
-              onClick={clearFields}
-              type="text"
-              name="userName"
-              placeholder="What's your name?*"
-              autoComplete="off"
-              {...register("userName", {
-                required: true,
-                min: 2,
-              })}
-            />
-            {errors.userName?.type === "required" && (
-              <span>You need to write your name!</span>
-            )}
-          </div>
-
-          <div
-            className={
-              Error || errors.userContact ? "InputWrapperError" : "InputWrapper"
-            }
-          >
-            <input
-              onClick={clearFields}
-              type="text"
-              name="userContact"
-              placeholder="Prefered contact?* (platform and username)"
-              autoComplete="off"
-              {...register("userContact", {
-                required: true,
-                min: 2,
-              })}
-            />
-            {errors.userContact?.type === "required" && (
-              <span>You need to write your contact!</span>
-            )}
-          </div>
-
-          <div
-            className={
-              Error || errors.userInterested
-                ? "InputWrapperError"
-                : "InputWrapper"
-            }
-          >
-            <textarea
-              onClick={clearFields}
-              type="text"
-              name="userInterested"
-              placeholder="What are you interested in?*"
-              autoComplete="off"
-              {...register("userInterested", {
-                required: true,
-                min: 2,
-              })}
-            />
-            {errors.userInterested?.type === "required" && (
-              <span>You need to write what you want!</span>
-            )}
-          </div>
-
-          <div
-            className={
-              Error || errors.userQuestion
-                ? "InputWrapperError"
-                : "InputWrapper"
-            }
-          >
-            <textarea
-              onClick={clearFields}
-              type="text"
-              name="userQuestion"
-              placeholder="Any questions?"
-              autoComplete="off"
-            />
-          </div>
-
-            <button
-              data-type="emoji"
-              id="Submit"
-              onClick={clearFields}
-              type="submit"
+          <div id="FormWrapper">
+            <div
+              className={
+                Error || errors.userName ? "InputWrapperError" : "InputWrapper"
+              }
             >
-              Send
-            </button>
+              <input
+                onClick={clearFields}
+                type="text"
+                name="userName"
+                placeholder="What's your name?*"
+                autoComplete="off"
+                {...register("userName", {
+                  required: true,
+                  min: 2,
+                })}
+              />
+              {errors.userName?.type === "required" && (
+                <span>You need to write your name!</span>
+              )}
+            </div>
+
+            <div
+              className={
+                Error || errors.userContact
+                  ? "InputWrapperError"
+                  : "InputWrapper"
+              }
+            >
+              <input
+                onClick={clearFields}
+                type="text"
+                name="userContact"
+                placeholder="Prefered contact?* (platform and username)"
+                autoComplete="off"
+                {...register("userContact", {
+                  required: true,
+                  min: 2,
+                })}
+              />
+              {errors.userContact?.type === "required" && (
+                <span>You need to write your contact!</span>
+              )}
+            </div>
+
+            <div
+              className={
+                Error || errors.userInterested
+                  ? "InputWrapperError"
+                  : "InputWrapper"
+              }
+            >
+              <textarea
+                onClick={clearFields}
+                type="text"
+                name="userInterested"
+                placeholder="What are you interested in?*"
+                autoComplete="off"
+                {...register("userInterested", {
+                  required: true,
+                  min: 2,
+                })}
+              />
+              {errors.userInterested?.type === "required" && (
+                <span>You need to write what you want!</span>
+              )}
+            </div>
+
+            <div
+              className={
+                Error || errors.userQuestion
+                  ? "InputWrapperError"
+                  : "InputWrapper"
+              }
+            >
+              <textarea
+                onClick={clearFields}
+                type="text"
+                name="userQuestion"
+                placeholder="Any questions?"
+                autoComplete="off"
+              />
+            </div>
+          </div>
+          <button
+            data-type="emoji"
+            id="Submit"
+            onClick={clearFields}
+            type="submit"
+          >
+            Send
+          </button>
           <h2 id={submitMessage ? "Show" : "noShow"}>👍</h2>
+
         </form>
-          <span></span>
+        <span></span>
       </main>
       <hr />
-            <footer>
-                <Footer3Icon></Footer3Icon>
-            </footer>
+      <footer>
+        <Footer3Icon season={props.season} />
+      </footer>
     </section>
   );
 };

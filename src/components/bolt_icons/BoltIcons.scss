@@ -1,72 +1,81 @@
 #ArrowBack {
-    position: absolute;
-    width: 30px;
-    top: 5vw;
-    left: 5vw;
+  position: absolute;
+  width: 30px;
+  top: 5vw;
+  left: 5vw;
+  z-index: 5;
+  cursor: pointer;
 }
 #TLbolt {
-    position: absolute;
-    width: 25px;
-    top: 5vw;
-    left: 5vw;
-    transform: rotate(60deg);
+  position: absolute;
+  width: 25px;
+  top: 5vw;
+  left: 5vw;
+  transform: rotate(60deg);
+  -webkit-filter: drop-shadow(0px 0px 5px #0000007e);
+  filter: drop-shadow(0px 0px 5px #0000007e);
 }
 #TRbolt {
-    position: absolute;
-    width: 25px;
-    top: 5vw;
-    right: 5vw;
-    transform: rotate(90deg);
+  position: absolute;
+  width: 25px;
+  top: 5vw;
+  right: 5vw;
+  transform: rotate(90deg);
+  -webkit-filter: drop-shadow(0px 0px 5px #0000007e);
+  filter: drop-shadow(0px 0px 5px #0000007e);
 }
 #BLbolt {
-    position: absolute;
-    width: 25px;
-    bottom: 5vw;
-    left: 5vw;
-    transform: rotate(20deg);
+  position: absolute;
+  width: 25px;
+  bottom: 5vw;
+  left: 5vw;
+  transform: rotate(20deg);
+  -webkit-filter: drop-shadow(0px 0px 5px #0000007e);
+  filter: drop-shadow(0px 0px 5px #0000007e);
 }
 #BRbolt {
-    position: absolute;
-    width: 25px;
-    bottom: 5vw;
-    right: 5vw;
-    transform: rotate(-30deg);
+  position: absolute;
+  width: 25px;
+  bottom: 5vw;
+  right: 5vw;
+  transform: rotate(-30deg);
+  -webkit-filter: drop-shadow(0px 0px 5px #0000007e);
+  filter: drop-shadow(0px 0px 5px #0000007e);
 }
 
 @media (min-width: 1366px) {
-    #ArrowBack {
-        position: absolute;
-        width: 35px;
-        top: 1vw;
-        left: 1vw;
-    }
-    #TLbolt {
-        position: absolute;
-        width: 30px;
-        top: 1vw;
-        left: 1vw;
-        transform: rotate(60deg);
-    }
-    #TRbolt {
-        position: absolute;
-        width: 30px;
-        top: 1vw;
-        right: 1vw;
-        transform: rotate(90deg);
-    }
-    #BLbolt {
-        position: absolute;
-        width: 30px;
-        bottom: 1vw;
-        left:1vw;
-        transform: rotate(20deg);
-    }
-    #BRbolt {
-        position: absolute;
-        width: 30px;
-        bottom: 1vw;
-        right: 1vw;
-        transform: rotate(-30deg);
-    }
-    
+  #ArrowBack {
+    position: absolute;
+    width: 35px;
+    top: 2vw;
+    left: 2vw;
+  }
+  #TLbolt {
+    position: absolute;
+    width: 30px;
+    top: 2vw;
+    left: 2vw;
+    transform: rotate(60deg);
+  }
+  #TRbolt {
+    position: absolute;
+    width: 30px;
+    top: 2vw;
+    right: 2vw;
+    transform: rotate(90deg);
+  }
+  #BLbolt {
+    position: absolute;
+    width: 30px;
+    bottom: 2vw;
+    left: 2vw;
+    transform: rotate(20deg);
+  }
+  #BRbolt {
+    position: absolute;
+    width: 30px;
+    bottom: 2vw;
+    right: 2vw;
+    transform: rotate(-30deg);
+  }
 }

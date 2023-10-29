@@ -9,7 +9,7 @@ export const TOS = (props) => {
     return (
         <section id="TOS">
             <MetaTags title={props.title}></MetaTags>
-            <TLbolt></TLbolt>
+            <TLbolt season={props.season}></TLbolt>
             <header>
                 <h5>{props.title}</h5>
                 <SmolLogo></SmolLogo>
@@ -66,10 +66,11 @@ export const TOS = (props) => {
                     <br />
                     you agree to all of these terms.
                 </p>
-                <NavLink to="/menu">
+                <NavLink className={` ${props.season ? "ChristmasButton" : ""}`} to="/menu">
 
                     <button>Yes i agree</button>
                 </NavLink>
+                <span></span>
                 <span></span>
             </main>
         </section>

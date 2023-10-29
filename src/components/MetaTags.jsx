@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 export const MetaTags = props => {
 	useEffect(() => {
 		window.scrollTo(0, 0); // Start from top when navigating
-        console.log(props.title);
+        // console.log(props.title);
 		document.title = props.title;
 		if (props.description) {
 		  document
