@@ -7,15 +7,11 @@ import {
 } from "react-router-dom";
 
 import Bolt_Icon1 from "../../assets/img/decoration/icons/Icons_Bolt1.png";
-import Bolt_Icon2 from "../../assets/img/decoration/icons/Icons_Bolt2.png";
 import Bolt_Icon3 from "../../assets/img/decoration/icons/Icons_Bolt3.png";
-import Bolt_Icon4 from "../../assets/img/decoration/icons/Icons_Bolt4.png";
 import Arrow_Icon from "../../assets/img/decoration/icons/Icons_BackArrow.png";
 
 import Bolt_Icon1Christmas from "../../assets/img/decoration/icons/Icons_Bolt1Christmas.png";
-import Bolt_Icon2Christmas from "../../assets/img/decoration/icons/Icons_Bolt2Christmas.png";
 import Bolt_Icon3Christmas from "../../assets/img/decoration/icons/Icons_Bolt3Christmas.png";
-import Bolt_Icon4Christmas from "../../assets/img/decoration/icons/Icons_Bolt4Christmas.png";
 import Arrow_IconChristmas from "../../assets/img/decoration/icons/Icons_BackArrowChristmas.png";
 
 export const TRbolt = (props) => {
@@ -56,6 +52,7 @@ export const BRbolt = (props) => {
 };
 export const ArrowIcon = (props) => {
   const navigate = useNavigate();
+  console.log(props.season);
   return (
     <img
       id="ArrowBack"

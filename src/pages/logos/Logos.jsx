@@ -1,7 +1,6 @@
-import { NavLink } from "react-router-dom";
-import { TLbolt, TRbolt, BLbolt, BRbolt, ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
-import { SmolLogo, BtLogos, BtOverlays, BtSchedules } from '../../components/nav/Nav.jsx';
-import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
+import { ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
+import { SmolLogo } from '../../components/nav/Nav.jsx';
+import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import { LogoMain } from "../../components/portfolio/Portfolio.jsx";
 import { MetaTags } from "../../components/MetaTags.jsx";
 

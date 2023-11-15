@@ -1,11 +1,6 @@
 import { NavLink } from "react-router-dom";
-import {
-  TLbolt,
-  TRbolt,
-  BLbolt,
-  BRbolt,
-} from "../../components/bolt_icons/BoltIcons.jsx";
-import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
+import { TLbolt } from "../../components/bolt_icons/BoltIcons.jsx";
+import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import {
   ClassicLogo,
   BtLogos,

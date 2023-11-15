@@ -1,7 +1,6 @@
-import { NavLink } from "react-router-dom"
-import { ArrowIcon, TLbolt } from '../../components/bolt_icons/BoltIcons.jsx';
+import { ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
 import { BtInv } from '../../components/nav/Nav.jsx';
-import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
+import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import HypeFace from "../../assets/img/decoration/faces/GoblinFace_Hyped.png"
 import HappyFace from "../../assets/img/decoration/faces/GoblinFace_Happy.png"
 import { MetaTags } from "../../components/MetaTags.jsx";
@@ -13,7 +12,7 @@ export const About = (props) => {
 
         <section id="About" className="TextColor">
             <MetaTags title={props.title}></MetaTags>
-            <ArrowIcon season={props}/>
+            <ArrowIcon season={props.season}/>
             <header>
                 <h5>{props.title}</h5>
                 <div className="Padding"></div>

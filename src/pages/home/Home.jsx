@@ -1,11 +1,5 @@
-import { NavLink } from "react-router-dom";
-import {
-  TLbolt,
-  TRbolt,
-  BLbolt,
-  BRbolt,
-} from "../../components/bolt_icons/BoltIcons.jsx";
-import { Footer2Icon, Footer3Icon } from "../../components/footer/Footer.jsx";
+import { TLbolt } from "../../components/bolt_icons/BoltIcons.jsx";
+import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import { ClassicLogo, BtAbout, BtInv } from "../../components/nav/Nav.jsx";
 import { MetaTags } from "../../components/MetaTags.jsx";
 
@@ -36,7 +30,6 @@ export const Home = (props) => {
           <li>Overlays</li>
           <li>Schedules</li>
           <li>And more</li>
-
         </ul>
         <p className="TextColor">
           {" "}
@@ -48,7 +41,7 @@ export const Home = (props) => {
         <BtInv season={props.season}></BtInv>
       </main>
       <footer>
-        <Footer3Icon season={props.season}/>
+        <Footer3Icon season={props.season} />
       </footer>
     </section>
   );

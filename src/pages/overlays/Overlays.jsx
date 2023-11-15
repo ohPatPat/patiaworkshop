@@ -2,9 +2,7 @@ import { ArrowIcon } from "../../components/bolt_icons/BoltIcons.jsx";
 import { SmolLogo } from "../../components/nav/Nav.jsx";
 import { Footer3Icon } from "../../components/footer/Footer.jsx";
 import { OverlaysMain } from "../../components/portfolio/Portfolio.jsx";
-import { Modal } from "../../components/portfolio/Portfolio.jsx";
 import { MetaTags } from "../../components/MetaTags.jsx";
-import React, { useState, useEffect } from "react";
 
 export const Overlays = (props) => {
   return (

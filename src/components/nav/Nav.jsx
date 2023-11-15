@@ -1,12 +1,6 @@
 import "./Nav.scss";
 
 import { NavLink } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
 
 import Logo_Basic from "../../assets/img/decoration/icons/PatiaLogo_Basic.png";
 import Buttons_AboutMe from "../../assets/img/decoration/buttons/Buttons_AboutMe.png";

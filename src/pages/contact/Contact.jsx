@@ -1,11 +1,5 @@
-import { NavLink } from "react-router-dom";
 import { ArrowIcon } from "../../components/bolt_icons/BoltIcons.jsx";
-import {
-  SmolLogo,
-  BtLogos,
-  BtOverlays,
-  BtSchedules,
-} from "../../components/nav/Nav.jsx";
+import { SmolLogo } from "../../components/nav/Nav.jsx";
 import { MetaTags } from "../../components/MetaTags.jsx";
 import { useForm } from "react-hook-form";
 import React, { useRef, useState, useEffect } from "react";
@@ -194,7 +188,6 @@ export const Contact = (props) => {
             Send
           </button>
           <h2 id={submitMessage ? "Show" : "noShow"}>👍</h2>
-
         </form>
         <span></span>
       </main>
