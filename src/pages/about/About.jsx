@@ -1,8 +1,8 @@
 import { ArrowIcon } from '../../components/bolt_icons/BoltIcons.jsx';
 import { BtInv } from '../../components/nav/Nav.jsx';
 import { Footer3Icon } from "../../components/footer/Footer.jsx";
-import HypeFace from "../../assets/img/decoration/faces/GoblinFace_Hyped.png"
-import HappyFace from "../../assets/img/decoration/faces/GoblinFace_Happy.png"
+import HypeFace from "../../assets/img/decoration/faces/GoblinFace_Hyped.webp"
+import HappyFace from "../../assets/img/decoration/faces/GoblinFace_Happy.webp"
 import { MetaTags } from "../../components/MetaTags.jsx";
 
 

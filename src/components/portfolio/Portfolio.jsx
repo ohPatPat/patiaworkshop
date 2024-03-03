@@ -2,13 +2,18 @@
 
 let LogosArray = [
   {
+    vtuber: "@Kinoq",
+    img: "KinoqLogo.webp",
+    link: "https://x.com/kinoqVT?s=20",
+  },
+  {
     vtuber: "Sekigetsu Yuki",
-    img: "SekigetsuYukiLogoV2.png",
+    img: "SekigetsuYukiLogoV2.webp",
     link: "#",
   },
   {
     vtuber: "@ReinaHardgore",
-    img: "ReinaHardgore-LogoV2.png",
+    img: "ReinaHardgore-LogoV2.webp",
     link: "https://twitter.com/ReinaHardgore",
   },
 ];
@@ -36,43 +41,48 @@ export const LogoMain = () => {
 
 let OverlaysArray = [
   {
+    vtuber: "@Kinoq",
+    img: "KinoqOverlayMockup.webp",
+    link: "https://x.com/kinoqVT?s=20",
+  },
+  {
     vtuber: "@moenaomii",
-    img: "moenaomiiOverlaysWaterMark2.png",
+    img: "MoenaomiiOverlayMockup.webp",
     link: "https://twitter.com/moenaomii",
   },
   {
     vtuber: "@senpaihinotama",
-    img: "SenpaiHinotamaOverlaysWaterMark.png",
+    img: "SenpaiHinotamaOverlayMockup.webp",
     link: "https://twitter.com/senpaihinotama",
   },
   {
     vtuber: "@juninya_vt",
-    img: "JuninyaOverlaysWaterMark.png",
+    img: "JuninyaOverlayMockup.webp",
     link: "https://twitter.com/juninya_vt",
   },
   {
     vtuber: "Ellen_s_art",
-    img: "EllenOverlaysWaterMark.png",
+    img: "EllenOverlayMockup.webp",
     link: "https://www.instagram.com/ellen_s_art/",
   },
   {
     vtuber: "@KitsuneKandi",
-    img: "KitsuneKandiOverlaysWaterMark.png",
+    img: "KitsuneKandiOverlayMockup.webp",
     link: "https://twitter.com/KitsuneKandi",
   },
   {
     vtuber: "@ThatMilka",
-    img: "ThatMilkaOverlaysWaterMark.png",
+    img: "ThatMilkaOverlayMockup.webp",
     link: "https://twitter.com/ThatMilka",
   },
   {
     vtuber: "@Zukiiya_vt",
-    img: "ZukiiOverlaysWaterMark.png",
+    img: "ZukiiyaVtOverlayMockup.webp",
     link: "https://twitter.com/Zukiiya_vt",
   },
   {
     vtuber: "@ReinaHardgore",
-    img: "ReinaHardgoreOverlaysWaterMark2.png",
+    img: "ReinaHardgoreOverlayMockup.webp",
     link: "https://twitter.com/ReinaHardgore",
   },
 ];
@@ -102,17 +112,17 @@ export const OverlaysMain = () => {
 let SchedulesArray = [
   {
     vtuber: "@HanamiyaChii",
-    img: "WeeklySchedule.png",
+    img: "WeeklySchedule.webp",
     link: "https://twitter.com/HanamiyaChii",
   },
   {
     vtuber: "@moenaomii",
-    img: "Moe-WeeklySchedule.png",
+    img: "Moe-WeeklySchedule.webp",
     link: "https://twitter.com/moenaomii",
   },
   {
     vtuber: "@ReinaHardgore",
-    img: "Reina Hardgore-WeeklySchedulev2.png",
+    img: "Reina Hardgore-WeeklySchedulev2.webp",
     link: "https://twitter.com/ReinaHardgore",
   },
 ];

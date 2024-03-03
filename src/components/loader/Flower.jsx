@@ -8,20 +8,31 @@ import Shadow7 from "../../assets/img/flower/8E9B559A.png";
 import Shadow8 from "../../assets/img/flower/8E9B559B.png";
 import Shadow9 from "../../assets/img/flower/8E9B5595.png";
 import Shadow10 from "../../assets/img/flower/8E9B5597.png";
+import { useEffect, useState } from "react";
 
 export const Flower = () => {
-  window.addEventListener("load", function () {
-    let loader = document.querySelector(".loader");
-    if (loader) {
-      loader.classList += " hidden";
+  const [playAnimation, setPlayAnimation] = useState(false);
+
+  // This will run one time after the component mounts
+  useEffect(() => {
+    const onPageLoad = () => {
+      setTimeout(() => {
+        setPlayAnimation(true);
+      }, 3000); // Change the delay time to your desired value in milliseconds
+    };
+    // Check if the page has already loaded
+    if (document.readyState === "complete") {
+      onPageLoad();
     } else {
-      return;
+      window.addEventListener("load", onPageLoad);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener("load", onPageLoad);
     }
-  });
+  }, []);
 
   return (
     <>
-      <div className="loader">
+      <div id="loader" className={playAnimation ? "Loaded" : "NotLoaded"}>
         {/*<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> */}
         <svg
           version="1.1"
@@ -51579,7 +51590,7 @@ export const Flower = () => {
             </g>
           </g>
         </svg>
-        <div id="zoomOut"></div>
+        {/* <div ></div> */}
       </div>
     </>
   );
