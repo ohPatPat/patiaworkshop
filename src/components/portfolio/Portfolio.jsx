@@ -41,6 +41,16 @@ export const LogoMain = () => {
 
 let OverlaysArray = [
   {
+    vtuber: "@RuffelTwitch",
+    img: "RuffelOverlaysWaterMark.webp",
+    link: "https://x.com/RuffelTwitch?s=20",
+  },
+  {
+    vtuber: "@GlorieCaprae",
+    img: "GloriaOverlaysWaterMark.webp",
+    link: "https://x.com/GlorieCaprae?s=20",
+  },
+  {
     vtuber: "@Kinoq",
     img: "KinoqOverlayMockup.webp",
     link: "https://x.com/kinoqVT?s=20",
