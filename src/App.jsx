@@ -19,13 +19,14 @@ import { Logos } from "./pages/logos/Logos";
 import { Menu } from "./pages/menu/Menu";
 import { Overlays } from "./pages/overlays/Overlays";
 import { Schedules } from "./pages/schedules/Schedules";
+import { Animated } from "./pages/animated/Animated";
 import { TOS } from "./pages/tos/TOS";
 import { Contact } from "./pages/contact/Contact";
 import { Error } from "./pages/error/Error";
 import { Flower } from "./components/loader/Flower";
 import { Seasons } from "./components/seasons/Seasons";
 
-import SnowTop from "./assets/img/decoration/SnowTop.png";
+import SnowTop from "./assets/img/decoration/SnowTop.webp";
 
 const Redirect = ({ to }) => {
   let navigate = useNavigate();
@@ -62,11 +63,7 @@ function App() {
       <Flower />
       <Seasons season={Christmas} />
       <div id="Card" className="TextColor">
-        <img
-          src={SnowTop}
-          alt=""
-          id={Christmas ? "SnowTop" : "DisplayNone"}
-        />
+        <img src={SnowTop} alt="" id={Christmas ? "SnowTop" : "DisplayNone"} />
         <TRbolt season={Christmas} />
 
         <Router>
@@ -121,6 +118,15 @@ function App() {
               element={
                 <Schedules
                   title={"Patia's workshop | Schedules commission page"}
+                  season={Christmas}
+                />
+              }
+            />
+            <Route
+              path="/animated"
+              element={
+                <Animated
+                  title={"Patia's workshop | Animated commission page"}
                   season={Christmas}
                 />
               }

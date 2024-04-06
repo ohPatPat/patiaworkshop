@@ -2,21 +2,23 @@ import "./Nav.scss";
 
 import { NavLink } from "react-router-dom";
 
-import Logo_Basic from "../../assets/img/decoration/icons/PatiaLogo_Basic.png";
-import Buttons_AboutMe from "../../assets/img/decoration/buttons/Buttons_AboutMe.png";
-import Buttons_Commissions from "../../assets/img/decoration/buttons/Buttons_Commissions.png";
-import Buttons_Inventory from "../../assets/img/decoration/buttons/Buttons_MyInventory.png";
-import Buttons_Logos from "../../assets/img/decoration/buttons/Buttons_Logos.png";
-import Buttons_Overlays from "../../assets/img/decoration/buttons/Buttons_Overlays.png";
-import Buttons_Schedules from "../../assets/img/decoration/buttons/Buttons_Schedules.png";
+import Logo_Basic from "../../assets/img/decoration/icons/PatiaLogo_Basic.webp";
+import Buttons_AboutMe from "../../assets/img/decoration/buttons/Buttons_AboutMe.webp";
+import Buttons_Commissions from "../../assets/img/decoration/buttons/Buttons_Commissions.webp";
+import Buttons_Inventory from "../../assets/img/decoration/buttons/Buttons_MyInventory.webp";
+import Buttons_Logos from "../../assets/img/decoration/buttons/Buttons_Logos.webp";
+import Buttons_Overlays from "../../assets/img/decoration/buttons/Buttons_Overlays.webp";
+import Buttons_Schedules from "../../assets/img/decoration/buttons/Buttons_Schedules.webp";
+import Buttons_Animated from "../../assets/img/decoration/buttons/Buttons_Animated.webp";
 
-import Logo_Basic_Christmas from "../../assets/img/decoration/icons/PatiaLogo_Christmas.png";
-import Buttons_AboutMe_Christmas from "../../assets/img/decoration/buttons/Buttons_AboutMe_Christmas.png";
-import Buttons_Commissions_Christmas from "../../assets/img/decoration/buttons/Buttons_Commissions_Christmas.png";
-import Buttons_Inventory_Christmas from "../../assets/img/decoration/buttons/Buttons_MyInventory_Christmas.png";
-import Buttons_Logos_Christmas from "../../assets/img/decoration/buttons/Buttons_Logos_Christmas.png";
-import Buttons_Overlays_Christmas from "../../assets/img/decoration/buttons/Buttons_Overlays_Christmas.png";
-import Buttons_Schedules_Christmas from "../../assets/img/decoration/buttons/Buttons_Schedules_Christmas.png";
+import Logo_Basic_Christmas from "../../assets/img/decoration/icons/PatiaLogo_Christmas.webp";
+import Buttons_AboutMe_Christmas from "../../assets/img/decoration/buttons/Buttons_AboutMe_Christmas.webp";
+import Buttons_Commissions_Christmas from "../../assets/img/decoration/buttons/Buttons_Commissions_Christmas.webp";
+import Buttons_Inventory_Christmas from "../../assets/img/decoration/buttons/Buttons_MyInventory_Christmas.webp";
+import Buttons_Logos_Christmas from "../../assets/img/decoration/buttons/Buttons_Logos_Christmas.webp";
+import Buttons_Overlays_Christmas from "../../assets/img/decoration/buttons/Buttons_Overlays_Christmas.webp";
+import Buttons_Schedules_Christmas from "../../assets/img/decoration/buttons/Buttons_Schedules_Christmas.webp";
+import Buttons_Animated_Christmas from "../../assets/img/decoration/buttons/Buttons_Animated_Christmas.webp";
 
 export const ClassicLogo = (props) => {
 
@@ -106,6 +108,17 @@ export const BtSchedules = (props) => {
         className="Bt"
         src={` ${props.season ? Buttons_Schedules_Christmas : Buttons_Schedules}`}
         alt="Buttons_Schedules"
+      />
+    </NavLink>
+  );
+};
+export const BtAnimated = (props) => {
+  return (
+    <NavLink to="/animated">
+      <img
+        className="Bt"
+        src={` ${props.season ? Buttons_Animated_Christmas : Buttons_Animated}`}
+        alt="Buttons_Animated"
       />
     </NavLink>
   );

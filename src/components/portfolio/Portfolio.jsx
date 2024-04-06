@@ -1,4 +1,4 @@
-
+import React, { useRef } from 'react';
 
 let LogosArray = [
   {
@@ -158,3 +158,41 @@ export const SchedulesMain = () => {
             </figure>
   ));
 };
+
+let AnimatedArray = [
+  {
+    vtuber: "@RuffelTwitch",
+    video: "Ruffel-Overlay-SS-V2-AE.mp4",
+    link: "https://x.com/RuffelTwitch?s=20",
+  },
+  {
+    vtuber: "@RuffelTwitch",
+    video: "BackgroundWithFrame-Ruffel-Overlay-AE.mp4",
+    link: "https://x.com/RuffelTwitch?s=20",
+  },
+  {
+    vtuber: "@GlorieCaprae",
+    video: "Halo-Overlays-AE.mp4",
+    link: "https://x.com/GlorieCaprae?s=20",
+  },
+];
+
+export const AnimatedMain = () => {
+
+  return AnimatedArray.map(({ vtuber, video, link }) => (
+            <figure className="ProductWrapper" key={vtuber}>
+              <video autoPlay muted loop className="PortVideo">
+                <source alt={vtuber} src={require(`../../assets/img/portfolio/animated/${video}`)} type="video/mp4"/>
+              </video>
+              <figcaption>
+                <small>
+                  <a href={link} target="blank">
+                    Made for {vtuber}
+                  </a>
+                </small>
+              </figcaption>
+              <div className="Padding"></div>
+            </figure>
+  ));
+};
+

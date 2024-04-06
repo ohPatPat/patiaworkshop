@@ -138,7 +138,6 @@ $Green: #002800;
   }
 }
 
-
 .Christmas {
   #Card {
     background-image: url(./assets/img/decoration/backgrounds/ChristmasBackground.png);
@@ -156,7 +155,7 @@ $Green: #002800;
   filter: drop-shadow(0px 5px 5px #0000007e);
 }
 
-#DisplayNone{
+#DisplayNone {
   display: none;
 }
 
@@ -274,13 +273,18 @@ section {
         height: auto;
         -webkit-filter: drop-shadow(0px 0px 10px #0000007e);
         filter: drop-shadow(0px 0px 10px #0000007e);
-            }
+      }
       .PortImgNoShadow {
         width: 100%;
         height: auto;
         -webkit-filter: drop-shadow(0px 0px 10px #0000007e);
         filter: drop-shadow(0px 0px 10px #0000007e);
-      
+      }
+      .PortVideo {
+        width: 100%;
+        height: auto;
+        -webkit-filter: drop-shadow(0px 0px 10px #0000007e);
+        filter: drop-shadow(0px 0px 10px #0000007e);
       }
 
       figcaption {

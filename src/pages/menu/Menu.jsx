@@ -6,6 +6,7 @@ import {
   BtLogos,
   BtOverlays,
   BtSchedules,
+  BtAnimated,
 } from "../../components/nav/Nav.jsx";
 import { MetaTags } from "../../components/MetaTags.jsx";
 
@@ -28,6 +29,7 @@ export const Menu = (props) => {
         <BtLogos season={props.season}></BtLogos>
         <BtOverlays season={props.season}></BtOverlays>
         <BtSchedules season={props.season}></BtSchedules>
+        <BtAnimated season={props.season}></BtAnimated>
 
         <p id="TosText1">Please remember to read my</p>
         <NavLink
