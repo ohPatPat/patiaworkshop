@@ -2,11 +2,11 @@ import "./Footer.scss";
 
 import Icons_Instagram from "../../assets/img/decoration/icons/Icons_Instagram.png";
 import Icons_Twitter from "../../assets/img/decoration/icons/Icons_Twitter.png";
-import Icons_Trello from "../../assets/img/decoration/icons/Icons_Trello.png";
+import Icons_BlueSky from "../../assets/img/decoration/icons/Icons_BlueSky.png";
 
 import Icons_InstagramChristmas from "../../assets/img/decoration/icons/Icons_InstagramChristmas.png";
 import Icons_TwitterChristmas from "../../assets/img/decoration/icons/Icons_TwitterChristmas.png";
-import Icons_TrelloChristmas from "../../assets/img/decoration/icons/Icons_TrelloChristmas.png";
+import Icons_BlueSkyChristmas from "../../assets/img/decoration/icons/Icons_BlueSkyChristmas.png";
 
 export const Footer3Icon = (props) => {
 
@@ -35,13 +35,13 @@ export const Footer3Icon = (props) => {
       </a>
 
       <a
-        href="https://trello.com/invite/b/tFpbp4vQ/2a7c61054ac57f65abc0a8a7231a482a/patias-waiting-list"
+        href="https://bsky.app/profile/ohpatia.bsky.social"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          src={` ${props.season ? Icons_TrelloChristmas : Icons_Trello}`}
-          alt="Icons_Trello"
+          src={` ${props.season ? Icons_BlueSkyChristmas : Icons_BlueSky}`}
+          alt="Icons_BlueSky"
         />
       </a>
     </footer>

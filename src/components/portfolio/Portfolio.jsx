@@ -40,6 +40,11 @@ export const LogoMain = () => {
 };
 
 let OverlaysArray = [
+    {
+    vtuber: "@Kinoq",
+    img: "KinoqOverlayMockupV2.webp",
+    link: "https://x.com/kinoqVT?s=20",
+  },
   {
     vtuber: "@RuffelTwitch",
     img: "RuffelOverlaysWaterMark.webp",
@@ -120,6 +125,11 @@ export const OverlaysMain = () => {
 };
 
 let SchedulesArray = [
+   {
+     vtuber: "@Kinoq",
+     img: "Kinoq-Schedule.webp",
+     link: "https://x.com/kinoqVT?s=20",
+   },
   {
     vtuber: "@HanamiyaChii",
     img: "WeeklySchedule.webp",
@@ -160,6 +170,11 @@ export const SchedulesMain = () => {
 };
 
 let AnimatedArray = [
+    {
+    vtuber: "@Kinoq",
+    video: "Kinoq-Overlay.mp4",
+    link: "https://x.com/kinoqVT?s=20",
+  },
   {
     vtuber: "@RuffelTwitch",
     video: "Ruffel-Overlay-SS-V2-AE.mp4",
